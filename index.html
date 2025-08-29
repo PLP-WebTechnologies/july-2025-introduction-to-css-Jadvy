@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Basics & The Box Model — Assignment</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1>CSS Basics &amp; The Box Model</h1>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#cards">Cards</a></li>
+          <li><a href="#box-playground">Box Model Playground</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="container">
+    <!-- Intro -->
+    <section id="intro" class="intro">
+      <h2>Introduction</h2>
+      <p>
+        This page demonstrates core CSS concepts for beginners: connecting an external
+        stylesheet, using common properties (color, font-size, margin, padding, border, background),
+        and understanding how the Box Model affects spacing and layout.
+      </p>
+      <p>
+        Tip: Inspect boxes in your browser dev tools to see <strong>content</strong>, <strong>padding</strong>,
+        <strong>border</strong>, and <strong>margin</strong> areas.
+      </p>
+    </section>
+
+    <!-- Cards demo -->
+    <section id="cards" class="cards-section">
+      <h2>Card Layout Example</h2>
+      <p class="section-note">
+        Below are simple “cards”. Each card shows margins (space <em>outside</em> the border),
+        padding (space <em>inside</em> the border), and a visible border.
+      </p>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Card One</h3>
+          <p>
+            A short paragraph to show how padding creates breathing room between text
+            and the border. Margin separates this card from its neighbors.
+          </p>
+          <a class="button" href="#!" aria-label="Learn more about card one">Learn more</a>
+        </article>
+
+        <article class="card">
+          <h3>Card Two</h3>
+          <p>
+            Borders outline the box’s edge. Try changing <code>border-width</code>,
+            <code>border-style</code>, and <code>border-color</code> in <code>styles.css</code>.
+          </p>
+          <a class="button" href="#!" aria-label="Learn more about card two">Learn more</a>
+        </article>
+
+        <article class="card">
+          <h3>Card Three</h3>
+          <p>
+            Background colors help you <em>see</em> the box boundaries. This is useful
+            while learning. You can tone them down later.
+          </p>
+          <a class="button" href="#!" aria-label="Learn more about card three">Learn more</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Box model playground -->
+    <section id="box-playground" class="playground-section">
+      <h2>Box Model Playground</h2>
+      <p class="section-note">
+        These four boxes have the same content width, but different padding, border, and margin.
+        Edit the CSS to observe how total size and spacing change.
+      </p>
+
+      <div class="playground-grid">
+        <div class="box demo-1">
+          <strong>Demo 1</strong>
+          <p>No extra padding or margin.</p>
+        </div>
+
+        <div class="box demo-2">
+          <strong>Demo 2</strong>
+          <p>With padding only.</p>
+        </div>
+
+        <div class="box demo-3">
+          <strong>Demo 3</strong>
+          <p>Padding + border.</p>
+        </div>
+
+        <div class="box demo-4">
+          <strong>Demo 4</strong>
+          <p>Padding + border + margin.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made for the “Introduction to CSS” assignment. No JavaScript or external libraries used.</p>
+    </div>
+  </footer>
+</body>
+</html>
